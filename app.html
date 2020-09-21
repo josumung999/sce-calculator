@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Project files -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>SCE calculator</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid bg-info text-white">
+      <div class="container text-center">
+        <img src="images/sce-logo.jpg" class="rounded-circle mb-4" alt="Logo Société de Construction de l'Equité" width="150" height="150"> 
+        <h1>SCE Calculator</h1>      
+        <p>Utilisez cette calculatrice pour convertir les prix</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <!-- Saisir le Prix en Shilling Tanzanien -->
+          <h1 class="xx-large mb-4">Formulaire</h1>
+            <div class="form-group">
+              <input type="number" id="tsh-price" class="form-control form-control-lg" placeholder="Saisissez le Prix en Tsh">
+            </div>
+            <button class="btn btn-block btn-info btn-lg" type="submit" id="btn-convert">Calculer</button>
+        </div>
+        <div class="col-lg-8 mb-4">
+          <!-- Afficher le resultat de prix pour les membres et les non membres -->
+          <h1 class="xx-large mb-4">Resultat</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card mb-2">
+                <div class="card-header text-mute">
+                  Prix pour les Membres
+                </div>
+                <div class="card-body">
+                  <h2 class="text-info" id="member-price"></h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card mb-2">
+                <div class="card-header text-mute">
+                  Prix pour les Non Membres Membres
+                </div>
+                <div class="card-body">
+                  <h2 class="text-info" id="non-member-price"></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Project files -->
+    <script type="text/javascript" src="js/numeral.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
