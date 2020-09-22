@@ -16,10 +16,10 @@ btnConvert.addEventListener('click', function (e) {
 		var margin2 = 0.2;
 		var memberDiscount = bifPrice * 0.03;
 
-		if (bifPrice <= 70000 ) {
+		if (bifPrice <= 100000 ) {
 		 	nonMemberPrice = numeral(Math.ceil(bifPrice + bifPrice*margin1)).format('0,0.0');
 			memberPrice = numeral(Math.ceil((bifPrice + bifPrice*margin1) - memberDiscount)).format('0,0.0'); 
-		} else if (bifPrice > 70000) {
+		} else if (bifPrice > 100000) {
 			nonMemberPrice = numeral(Math.ceil(bifPrice + bifPrice*margin2)).format('0,0.0');
 			memberPrice = numeral(Math.ceil((bifPrice + bifPrice*margin2) - memberDiscount)).format('0,0.0');
 		} else {
