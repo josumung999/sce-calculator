@@ -10,7 +10,7 @@ btnConvert.addEventListener('click', function (e) {
 	if (isNaN(tshPrice)) {
 		alert('Saisissez un nombre !')
 	} else {
-		var tshRate = 1.4;
+		var tshRate = 1.46;
 		var bifPrice = tshPrice * tshRate;
 		var margin1 = 0.3;
 		var margin2 = 0.2;
