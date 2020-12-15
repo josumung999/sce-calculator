@@ -3,18 +3,24 @@ body {
 	font-family: 'Poppins', sans-serif !important;
 }
 
+
 .jumbotron h1 {
 	font-weight: 700;
+	color: #fff !important;
+}
+
+.row h1 {
+	color: #2F364D !important;
 }
 
 .bg-info {
-	background-color: #004AAD !important;
+	background-color: #993F60 !important;
 }
 
 .btn-info {
-	background-color: #004AAD !important;
+	background-color: #993F60 !important;
 }
 
 .text-info {
-	color: #004AAD !important;
+	color: #2F364D !important;
 }
