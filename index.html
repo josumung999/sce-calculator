@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/jpg" href="images/bravo-logo.jpg" />
+    <link rel="icon" type="image/png" href="images/easy-shopping.png" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,14 +12,14 @@
     <!-- Project files -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Bravo Calculator</title>
+    <title>Convertisseur de Prix - Easy Shopping</title>
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid bg-info text-white">
+    <div class="jumbotron jumbotron-fluid bg-success text-white">
       <div class="container text-center">
-        <img src="images/bravo-logo.jpg" class="rounded-circle mb-4" alt="Logo Société de Construction de l'Equité" width="150" height="150"> 
-        <h1>Bravo Calculator</h1>      
-        <p>Utilisez cette calculatrice pour convertir les prix</p>
+        <img src="images/easy-shopping.png" class="rounded-circle mb-4" alt="Logo Société de Construction de l'Equité" width="150" height="150"> 
+        <h1>Easy Shopping</h1>      
+        <p>Utilisez cet outil pour connaitre le prix total de votre commande sur KiKuu</p>
       </div>
     </div>
 
@@ -27,33 +27,37 @@
       <div class="row">
         <div class="col-lg-4 mb-4">
           <!-- Saisir le Prix en Shilling Tanzanien -->
-          <h1 class="xx-large mb-4">Formulaire</h1>
+          <h1 class="xx-large mb-4 text-success">Formulaire</h1>
             <div class="form-group">
               <input type="number" id="tsh-price" class="form-control form-control-lg" placeholder="Saisissez le Prix en Tsh">
             </div>
-            <button class="btn btn-block btn-info btn-lg" type="submit" id="btn-convert">Calculer</button>
+            <button class="btn btn-block btn-success btn-lg" type="submit" id="btn-convert">Calculer</button>
         </div>
         <div class="col-lg-8 mb-4">
-          <!-- Afficher le resultat de prix pour les membres et les non membres -->
-          <h1 class="xx-large mb-4">Resultat</h1>
+          <!-- Afficher le resultat de prix en Francs Burundais -->
           <div class="row">
             <div class="col-lg-6">
               <div class="card mb-2">
                 <div class="card-header text-mute">
-                  Prix pour les Membres
+                  Total à Payer en Francs Burundais
                 </div>
                 <div class="card-body">
-                  <h2 class="text-info" id="member-price"></h2>
+                  <h2 class="text-info" id="price"></h2>
                 </div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="card mb-2">
                 <div class="card-header text-mute">
-                  Prix pour les Non Membres
+                  Description
                 </div>
                 <div class="card-body">
-                  <h2 class="text-info" id="non-member-price"></h2>
+                 <p class="text-secondary">Le Prix total tel qu'affiché inclut les éléments suivants:</p>
+                 <ul class="list-group">
+                   <li class="list-group-item">Prix du Produit</li>
+                   <li class="list-group-item">Transport & Frais de Douane</li>
+                   <li class="list-group-item">Comission du Sous-traitant</li>
+                 </ul>
                 </div>
               </div>
             </div>
@@ -62,8 +66,8 @@
       </div>
     </div>
 
-    <div class="jumbotron text-center text-white bg-info mt-4" style="margin-bottom:0">
-      <p>Copyright Bravo Shoppers 2020. Built By <a href="https://github.com/josumung999/" target="_blank" class="text-muted">@josumung999</a></p>
+    <div class="jumbotron text-center text-white bg-success mt-4" style="margin-bottom:0">
+      <p>© 2021 Easy Shopping. Built By <a class="text-dark href="https://github.com/josumung999/" target="_blank">@josumung999</a></p>
     </div>
 
     <!-- Optional JavaScript -->
